@@ -20,7 +20,7 @@ import com.idlestar.ratingstar.R;
 import static android.graphics.Canvas.CLIP_SAVE_FLAG;
 
 /**
- * RatingStar is specific RatingBar use star as drawable the progress mark.
+ * RatingStar is specific RatingBar use star drawable as the progress mark.
  *
  * NOTE:
  * Padding will be larger if is {@link #cornerRadius} is set (No exact calc to handle this issue).
