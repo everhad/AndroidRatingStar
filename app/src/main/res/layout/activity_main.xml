@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idlestar.androidratingstar.MainActivity">
+
+  <TextView
+      android:text="fill-color、empty-color、\n border-color"
+      android:textSize="20sp"
+      android:layout_marginBottom="4dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  <com.idlestar.ratingstar.RatingStarView
+      android:id="@+id/ratingStarView"
+      app:cornerRadius="4dp"
+      app:starMargin="4dp"
+      app:strokeWidth="2px"
+      app:strokeColor="#457DD7"
+      app:starForegroundColor="#DB6958"
+      app:starBackgroundColor="#E8E8E8"
+      app:rating="1.5"
+      app:starNum="4"
+      app:drawStrokeForEmptyStar="true"
+      app:drawStrokeForHalfStar="false"
+      android:paddingTop="2dp"
+      android:paddingLeft="2dp"
+      android:paddingRight="0dp"
+      android:background="#fff"
+      android:layout_width="130dp"
+      android:layout_height="40dp" />
+
+  <TextView
+      android:layout_marginTop="4dp"
+      android:text="star size、corner radius \n border width、star margin"
+      android:textSize="20sp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  <com.idlestar.ratingstar.RatingStarView
+      app:cornerRadius="16dp"
+      app:starMargin="12dp"
+      app:strokeWidth="4px"
+      app:strokeColor="#457DD7"
+      app:starForegroundColor="#DB6958"
+      app:starBackgroundColor="#E8E8E8"
+      app:rating="0.5"
+      app:starNum="4"
+      android:layout_marginTop="8dp"
+      app:drawStrokeForEmptyStar="false"
+      app:drawStrokeForHalfStar="true"
+      android:paddingTop="2dp"
+      android:paddingLeft="0dp"
+      android:paddingRight="0dp"
+      android:background="#fff"
+      android:layout_width="wrap_content"
+      android:layout_height="70dp" />
+
+  <TextView
+      android:layout_marginTop="4dp"
+      android:text="star thickness"
+      android:textSize="22sp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  <com.idlestar.ratingstar.RatingStarView
+      app:cornerRadius="32dp"
+      app:starMargin="12dp"
+      app:strokeWidth="8px"
+      app:strokeColor="#457DD7"
+      app:starForegroundColor="#DB6958"
+      app:starBackgroundColor="#E8E8E8"
+      app:starNum="2"
+      app:rating="1"
+      app:starThickness="0.7"
+      android:layout_marginTop="8dp"
+      app:drawStrokeForEmptyStar="false"
+      app:drawStrokeForHalfStar="true"
+      android:paddingTop="2dp"
+      android:paddingLeft="0dp"
+      android:paddingRight="0dp"
+      android:background="#fff"
+      android:layout_width="wrap_content"
+      android:layout_height="140dp" />
+
+  <TextView
+      android:layout_marginTop="4dp"
+      android:text="click to rate"
+      android:textSize="22sp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  <com.idlestar.ratingstar.RatingStarView
+      app:cornerRadius="4dp"
+      app:starMargin="12dp"
+      app:strokeWidth="2px"
+      app:strokeColor="#457DD7"
+      app:starForegroundColor="#DB6958"
+      app:starBackgroundColor="#E8E8E8"
+      app:starNum="5"
+      app:rating="1"
+      app:enableSelectRating="true"
+      app:starThickness="0.7"
+      android:layout_marginTop="8dp"
+      app:drawStrokeForEmptyStar="false"
+      app:drawStrokeForHalfStar="true"
+      android:paddingTop="2dp"
+      android:paddingLeft="0dp"
+      android:paddingRight="0dp"
+      android:background="#fff"
+      android:layout_width="wrap_content"
+      android:layout_height="40dp" />
+</LinearLayout>

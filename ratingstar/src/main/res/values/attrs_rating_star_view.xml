@@ -1,0 +1,17 @@
+<resources>
+    <declare-styleable name="RatingStarView">
+        <attr name="starMargin" format="integer|dimension" />
+        <attr name="cornerRadius" format="float|dimension" />
+        <attr name="starForegroundColor" format="color|reference" />
+        <attr name="starBackgroundColor" format="color|reference" />
+        <attr name="strokeColor" format="color|reference" />
+        <attr name="strokeWidth" format="float|dimension" />
+        <attr name="starNum" format="integer" />
+        <attr name="rating" format="float" />
+        <attr name="starThickness" format="float|fraction" />
+        <attr name="drawStrokeForEmptyStar" format="boolean" />
+        <attr name="drawStrokeForFullStar" format="boolean" />
+        <attr name="drawStrokeForHalfStar" format="boolean" />
+        <attr name="enableSelectRating" format="boolean" />
+    </declare-styleable>
+</resources>
