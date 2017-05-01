@@ -97,6 +97,7 @@
       android:layout_height="wrap_content" />
 
   <com.idlestar.ratingstar.RatingStarView
+      android:id="@+id/rsv_rating"
       app:cornerRadius="4dp"
       app:starMargin="12dp"
       app:strokeWidth="2px"
