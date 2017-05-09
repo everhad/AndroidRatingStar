@@ -13,5 +13,6 @@
         <attr name="drawStrokeForFullStar" format="boolean" />
         <attr name="drawStrokeForHalfStar" format="boolean" />
         <attr name="enableSelectRating" format="boolean" />
+        <attr name="onlyHalfStar" format="boolean" />
     </declare-styleable>
 </resources>

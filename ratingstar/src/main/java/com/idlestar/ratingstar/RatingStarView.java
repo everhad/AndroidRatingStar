@@ -54,6 +54,7 @@ public class RatingStarView extends View implements View.OnClickListener {
     private boolean drawStrokeForHalfStar = true;
     private boolean drawStrokeForEmptyStar = true;
     private boolean enableSelectRating = false;
+    private boolean onlyHalfStar = true;
     private float starThicknessFactor = StarModel.DEFAULT_THICKNESS;
     private float dividerX;
     private float clickedX, clickedY;
@@ -108,6 +109,7 @@ public class RatingStarView extends View implements View.OnClickListener {
         drawStrokeForFullStar = a.getBoolean(R.styleable.RatingStarView_drawStrokeForFullStar, false);
         drawStrokeForHalfStar = a.getBoolean(R.styleable.RatingStarView_drawStrokeForHalfStar, true);
         enableSelectRating = a.getBoolean(R.styleable.RatingStarView_enableSelectRating, false);
+        onlyHalfStar = a.getBoolean(R.styleable.RatingStarView_onlyHalfStar, true);
         a.recycle();
     }
 
@@ -309,6 +311,9 @@ public class RatingStarView extends View implements View.OnClickListener {
             } else {
                 float decimal = rating - i;
                 if (decimal > 0) {
+                    if (onlyHalfStar) {
+                        decimal = 0.5f;
+                    }
                     drawPartialStar(starList.get(i), canvas, decimal);
                 } else {
                     drawEmptyStar(starList.get(i), canvas);
@@ -371,7 +376,7 @@ public class RatingStarView extends View implements View.OnClickListener {
     }
 
     private void drawSolidStar(StarModel star, Canvas canvas, int fillColor) {
-        paint.setStyle(Paint.Style.FILL);
+        paint.setStyle(Paint.Style.FILL_AND_STROKE);
         paint.setColor(fillColor);
         paint.setPathEffect(pathEffect);
 
