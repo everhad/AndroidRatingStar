@@ -1,5 +1,5 @@
 # AndroidRatingStar
-RatingStar is specific RatingBar use star drawable as the progress mark.
+RatingStar is specific RatingBar use star drawable as the rating mark.
 
 # Features
 The following screenshot shows the features RatingStar provides:
@@ -8,7 +8,7 @@ The following screenshot shows the features RatingStar provides:
 
 # Usage
 ## gradle dependencies
-See "https://jitpack.io/#everhad/AndroidRatingStar/v1.0".
+See "https://jitpack.io/#everhad/AndroidRatingStar/v1.0.1".
 
 ### Step 1. Add the JitPack repository to your build file
 ```code
@@ -23,7 +23,7 @@ allprojects {
 ### Step 2. Add the dependency
 ```code
 dependencies {
-    compile 'com.github.everhad:AndroidRatingStar:v1.0'
+    compile 'com.github.everhad:AndroidRatingStar:v1.0.1'
 }
 ```
 
@@ -38,6 +38,7 @@ dependencies {
      app:starBackgroundColor="#E8E8E8"
      app:starNum="5"
      app:rating="1"
+     app:onlyHalfStar="true"
      app:enableSelectRating="true"
      app:starThickness="0.7"
      android:layout_marginTop="8dp"
