@@ -486,4 +486,8 @@ public class RatingStarView extends View implements View.OnClickListener {
             left += (starWidth + starMargin);
         }
     }
+
+    public float getRating() {
+        return rating;
+    }
 }
