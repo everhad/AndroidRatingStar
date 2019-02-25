@@ -8,7 +8,7 @@ The following screenshot shows the features RatingStar provides:
 
 # Usage
 ## gradle dependencies
-See "https://jitpack.io/#everhad/AndroidRatingStar/v1.0.2".
+See "https://jitpack.io/#everhad/AndroidRatingStar/v1.0.3".
 
 ### Step 1. Add the JitPack repository to your build file
 ```code
@@ -23,27 +23,27 @@ allprojects {
 ### Step 2. Add the dependency
 ```code
 dependencies {
-    compile 'com.github.everhad:AndroidRatingStar:v1.0.2'
+    compile 'com.github.everhad:AndroidRatingStar:v1.0.3'
 }
 ```
 
 ## In Your 'layout.xml'
 ```xml
 <com.idlestar.ratingstar.RatingStarView
-     app:cornerRadius="4dp"
-     app:starMargin="12dp"
-     app:strokeWidth="2px"
-     app:strokeColor="#457DD7"
-     app:starForegroundColor="#DB6958"
-     app:starBackgroundColor="#E8E8E8"
-     app:starNum="5"
-     app:rating="1"
-     app:onlyHalfStar="true"
-     app:enableSelectRating="true"
-     app:starThickness="0.7"
+     app:rsv_cornerRadius="4dp"
+     app:rsv_starMargin="12dp"
+     app:rsv_strokeWidth="2px"
+     app:rsv_strokeColor="#457DD7"
+     app:rsv_starForegroundColor="#DB6958"
+     app:rsv_starBackgroundColor="#E8E8E8"
+     app:rsv_starNum="5"
+     app:rsv_rating="1"
+     app:rsv_onlyHalfStar="true"
+     app:rsv_enableSelectRating="true"
+     app:rsv_starThickness="0.7"
      android:layout_marginTop="8dp"
-     app:drawStrokeForEmptyStar="false"
-     app:drawStrokeForHalfStar="true"
+     app:rsv_drawStrokeForEmptyStar="false"
+     app:rsv_drawStrokeForHalfStar="true"
      android:paddingTop="2dp"
      android:paddingLeft="0dp"
      android:paddingRight="0dp"
