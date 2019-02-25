@@ -1,18 +1,18 @@
 <resources>
     <declare-styleable name="RatingStarView">
-        <attr name="starMargin" format="integer|dimension" />
-        <attr name="cornerRadius" format="float|dimension" />
-        <attr name="starForegroundColor" format="color|reference" />
-        <attr name="starBackgroundColor" format="color|reference" />
-        <attr name="strokeColor" format="color|reference" />
-        <attr name="strokeWidth" format="float|dimension" />
-        <attr name="starNum" format="integer" />
-        <attr name="rating" format="float" />
-        <attr name="starThickness" format="float|fraction" />
-        <attr name="drawStrokeForEmptyStar" format="boolean" />
-        <attr name="drawStrokeForFullStar" format="boolean" />
-        <attr name="drawStrokeForHalfStar" format="boolean" />
-        <attr name="enableSelectRating" format="boolean" />
-        <attr name="onlyHalfStar" format="boolean" />
+        <attr name="rsv_starMargin" format="integer|dimension" />
+        <attr name="rsv_cornerRadius" format="float|dimension" />
+        <attr name="rsv_starForegroundColor" format="color|reference" />
+        <attr name="rsv_starBackgroundColor" format="color|reference" />
+        <attr name="rsv_strokeColor" format="color|reference" />
+        <attr name="rsv_strokeWidth" format="float|dimension" />
+        <attr name="rsv_starNum" format="integer" />
+        <attr name="rsv_rating" format="float" />
+        <attr name="rsv_starThickness" format="float|fraction" />
+        <attr name="rsv_drawStrokeForEmptyStar" format="boolean" />
+        <attr name="rsv_drawStrokeForFullStar" format="boolean" />
+        <attr name="rsv_drawStrokeForHalfStar" format="boolean" />
+        <attr name="rsv_enableSelectRating" format="boolean" />
+        <attr name="rsv_onlyHalfStar" format="boolean" />
     </declare-styleable>
 </resources>

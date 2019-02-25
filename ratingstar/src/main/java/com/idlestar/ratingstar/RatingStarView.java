@@ -15,8 +15,6 @@ import android.view.View;
 
 import java.util.ArrayList;
 
-import com.idlestar.ratingstar.R;
-
 import static android.graphics.Canvas.CLIP_SAVE_FLAG;
 
 /**
@@ -96,20 +94,20 @@ public class RatingStarView extends View implements View.OnClickListener {
     private void loadAttributes(AttributeSet attrs, int defStyle) {
         final TypedArray a = getContext().obtainStyledAttributes(
                 attrs, R.styleable.RatingStarView, defStyle, 0);
-        strokeColor = a.getColor(R.styleable.RatingStarView_strokeColor, strokeColor);
-        starForegroundColor = a.getColor(R.styleable.RatingStarView_starForegroundColor, starForegroundColor);
-        starBackgroundColor = a.getColor(R.styleable.RatingStarView_starBackgroundColor, starBackgroundColor);
-        cornerRadius = a.getDimension(R.styleable.RatingStarView_cornerRadius, cornerRadius);
-        starMargin = a.getDimension(R.styleable.RatingStarView_starMargin, starMargin);
-        strokeWidth = a.getDimension(R.styleable.RatingStarView_strokeWidth, strokeWidth);
-        starThicknessFactor = a.getFloat(R.styleable.RatingStarView_starThickness, starThicknessFactor);
-        rating = a.getFloat(R.styleable.RatingStarView_rating, rating);
-        starNum = a.getInteger(R.styleable.RatingStarView_starNum, starNum);
-        drawStrokeForEmptyStar = a.getBoolean(R.styleable.RatingStarView_drawStrokeForEmptyStar, true);
-        drawStrokeForFullStar = a.getBoolean(R.styleable.RatingStarView_drawStrokeForFullStar, false);
-        drawStrokeForHalfStar = a.getBoolean(R.styleable.RatingStarView_drawStrokeForHalfStar, true);
-        enableSelectRating = a.getBoolean(R.styleable.RatingStarView_enableSelectRating, false);
-        onlyHalfStar = a.getBoolean(R.styleable.RatingStarView_onlyHalfStar, true);
+        strokeColor = a.getColor(R.styleable.RatingStarView_rsv_strokeColor, strokeColor);
+        starForegroundColor = a.getColor(R.styleable.RatingStarView_rsv_starForegroundColor, starForegroundColor);
+        starBackgroundColor = a.getColor(R.styleable.RatingStarView_rsv_starBackgroundColor, starBackgroundColor);
+        cornerRadius = a.getDimension(R.styleable.RatingStarView_rsv_cornerRadius, cornerRadius);
+        starMargin = a.getDimension(R.styleable.RatingStarView_rsv_starMargin, starMargin);
+        strokeWidth = a.getDimension(R.styleable.RatingStarView_rsv_strokeWidth, strokeWidth);
+        starThicknessFactor = a.getFloat(R.styleable.RatingStarView_rsv_starThickness, starThicknessFactor);
+        rating = a.getFloat(R.styleable.RatingStarView_rsv_rating, rating);
+        starNum = a.getInteger(R.styleable.RatingStarView_rsv_starNum, starNum);
+        drawStrokeForEmptyStar = a.getBoolean(R.styleable.RatingStarView_rsv_drawStrokeForEmptyStar, true);
+        drawStrokeForFullStar = a.getBoolean(R.styleable.RatingStarView_rsv_drawStrokeForFullStar, false);
+        drawStrokeForHalfStar = a.getBoolean(R.styleable.RatingStarView_rsv_drawStrokeForHalfStar, true);
+        enableSelectRating = a.getBoolean(R.styleable.RatingStarView_rsv_enableSelectRating, false);
+        onlyHalfStar = a.getBoolean(R.styleable.RatingStarView_rsv_onlyHalfStar, true);
         a.recycle();
     }
 
