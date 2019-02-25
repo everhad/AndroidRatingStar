@@ -8,7 +8,7 @@ The following screenshot shows the features RatingStar provides:
 
 # Usage
 ## gradle dependencies
-See "https://jitpack.io/#everhad/AndroidRatingStar/v1.0.3".
+See "https://jitpack.io/#everhad/AndroidRatingStar/v1.0.4".
 
 ### Step 1. Add the JitPack repository to your build file
 ```code
@@ -23,7 +23,7 @@ allprojects {
 ### Step 2. Add the dependency
 ```code
 dependencies {
-    compile 'com.github.everhad:AndroidRatingStar:v1.0.3'
+    compile 'com.github.everhad:AndroidRatingStar:v1.0.4'
 }
 ```
 
